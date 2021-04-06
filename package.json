@@ -1,0 +1,29 @@
+{
+  "name": "fuck-that-user-in-particular-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "author": "Davide Specchia <dnl.s.1992@gmail.com>",
+  "scripts": {
+    "start": "dotenv -e .env.local ts-node src/index.ts",
+    "start-prod": "node dist/",
+    "postinstall": "tsc"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "dotenv-cli": "^4.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fp-ts": "^2.9.5",
+    "io-ts": "^2.2.16"
+  },
+  "engines": {
+    "node": ">=15.11.0",
+    "npm": ">=7.7.5"
+  }
+}
