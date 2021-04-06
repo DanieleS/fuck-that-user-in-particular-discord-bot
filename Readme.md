@@ -3,7 +3,7 @@
 This simple Discord bot has only one command:
 
 ```bash
-!kick-${TARGET_NAME} # kick a specific user from the voice channel he's currently in.
+!fuck-${TARGET_NAME} # kick a specific user from the voice channel he's currently in.
 ```
 
 ## Configuration
@@ -14,7 +14,7 @@ The bot needs the following environment variables to be defined:
 DISCORD_TOKEN= # the discord bot token
 COMMAND_PREFIX= # the prefix of the command to be used. (eg. !)
 TARGET_ID=  # the target id of the user to be kicked
-TARGET_NAME= # the name of the user to be kicked. It will be used in the command name. (eg. Davide => !kick-davide)
+TARGET_NAME= # the name of the user to be kicked. It will be used in the command name. (eg. Davide => !fuck-davide)
 ```
 
 ## Deploy

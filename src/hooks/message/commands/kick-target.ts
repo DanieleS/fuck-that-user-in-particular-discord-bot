@@ -19,7 +19,7 @@ const execute: Execute = (message) =>
   );
 
 export const KickTarget: Command = (ctx) => ({
-  command: `kick-${ctx.environment.TARGET_NAME}`,
+  command: `fuck-${ctx.environment.TARGET_NAME}`,
   description: `Kicka ${capitalizeWords(
     ctx.environment.TARGET_NAME.toLocaleLowerCase()
   )} dal canale vocale`,
