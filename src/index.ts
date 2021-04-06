@@ -1,6 +1,6 @@
 import Discord from "discord.js";
 import * as IOE from "fp-ts/IOEither";
-import { constVoid } from "fp-ts/lib/function";
+import { constVoid, flow } from "fp-ts/lib/function";
 import { pipe } from "fp-ts/lib/pipeable";
 import { Context } from "./models/context";
 import { hookExecutor } from "./services/hook-executor";
@@ -22,6 +22,6 @@ pipe(
   process.env,
   EnvironmentC.decode,
   IOE.fromEither,
-  IOE.chain((env) => IOE.fromIO(init(env))),
+  IOE.chain(flow(init, IOE.fromIO)),
   IOE.fold(error, () => constVoid)
 )();
