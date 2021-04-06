@@ -7,7 +7,6 @@ import { hookExecutor } from "./services/hook-executor";
 import { MessageHooks } from "./hooks/message";
 import { Environment, EnvironmentC } from "./models/environment";
 import { error, log } from "fp-ts/lib/Console";
-import { addHandler } from "./framework/handler";
 
 const init = (environment: Environment) => () => {
   const client = new Discord.Client();
